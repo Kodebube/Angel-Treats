@@ -1,0 +1,184 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+.top {
+	padding: 0;
+}
+.top img {
+	width: 100%;
+}
+.body {
+	margin: 0;
+  padding: 50px 20px;
+  margin-bottom: 8px;
+  background: url("img/bg2.png") no-repeat center;
+}
+p {
+  font-size: 2em;
+  font-family: cursive;
+}
+#red {
+  color: red;
+}
+
+/*Cart*/
+#cart {
+  display: none;
+  position: fixed;
+  bottom: 0; right: 25px; top: 120px;
+  padding-top: 30px;
+  border-radius: 100%;
+  background: red;
+  width: 100px;
+  height: 100px;
+  color: white;
+  outline: 2px solid yellow;
+}
+#cart .fa {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+}
+#cart:hover {
+  color: yellow;
+}
+#cart:active {
+  background: white;
+  color: red;
+  outline: 1px solid;
+}
+#cart p {
+  float: right;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  background: yellow;
+  color: red;
+  font-size: 17px;
+  text-align: center;
+  margin: 10px 0 0 40px;
+  z-index: 1000;
+}
+
+/*Ice-Cream*/
+.ice-cream {
+  margin: 0 20px;
+}
+.ice-cream .box {
+  display: block;
+  background: url("img/cream7.png") no-repeat center;
+}
+.ice-cream .box img{
+  display: block;
+  width: 300px;
+}
+.ice-cream-links {
+  width: 100%;
+  background: url("img/icecreambg1.jpeg");
+}
+.ice-cream-links .box1 {
+  border: 2px dotted;
+  margin: 30px 64px;
+  float: left;
+}
+.ice-cream-links .box1:hover {
+  box-shadow: 0px 0px 20px 0px;
+}
+.box1 a {
+  text-decoration: none;
+}
+.box-text {
+  font-family: cursive;
+  font-size: 1.5em;
+  color: gold;
+}
+.ice-cream-links .box1 img {
+  height: 300px;
+  width: 300px;
+}
+.box1 .fa {
+  float: right;
+  font-size: 1.5em;
+  margin-right: 5px;
+  display: none;
+}
+.ice-cream-links .box1:hover .fa{
+  display: block;
+}
+#crm-btn {
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  margin-left: 600px;
+}
+#morecrm {
+  display: none;
+}
+
+
+
+
+
+
+
+
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width: 800px) {
+  p {
+    font-size: 17px;
+  }
+  .ice-cream .box img{
+    width: 200px;
+  }
+
+
+.ice-cream-links .box1 {
+  float: left;
+}
+.ice-cream-links .box1 img {
+  height: 200px;
+  min-width: 250px;
+}
+.ice-cream-links .box1:hover {
+  box-shadow: 0px 0px 11px 0px;
+}
+.box-text {
+  font-family: cursive;
+  font-size: 1em;
+  font-weight: bold;
+}
+.box1 .fa {
+  float: right;
+  font-size: 20px;
+  margin: 5px;
+  display: none;
+}
+.ice-cream .box img{
+  display: block;
+  width: 200px;
+}
+#crm-btn {
+  margin-left: 180px;
+  font-size: 14px;
+  padding: 5px 8px;
+}
+/*----- Cart -----*/
+#cart {
+  position: fixed;
+  bottom: 0; right: 25px; top: 60px;
+  padding-top: 15px;
+  width: 50px;
+  height: 50px;
+}
+#cart .fa {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+}
+#cart p {
+  width: 15px;
+  height: 15px;
+  font-size: 10px;
+}
+}
